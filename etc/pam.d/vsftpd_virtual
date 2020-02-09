@@ -1,0 +1,4 @@
+#%PAM-1.0
+auth       required     pam_userdb.so	db=/etc/vsftpd/vuser_passwd
+account    required     pam_userdb.so	db=/etc/vsftpd/vuser_passwd
+session    required     pam_loginuid.so
